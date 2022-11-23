@@ -1,0 +1,23 @@
+
+#配置数据连接
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mycnblog?charaEncoding=utf8&useSSL=false
+    username: root
+    password: 111111
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #特殊添加 mysql的驱动 固定写法
+
+#开启MyBatis SQL打印
+logging:
+  level:
+    com:
+      example:
+        demo: debug
+
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
